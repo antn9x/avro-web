@@ -25,13 +25,15 @@ interface ParsedSchema<T> {
     decode: (payload: Buffer) => T;
 }
 
-type Schema = PrimitiveType | RecordsType | EnumsType
+type AvroSchema = PrimitiveType | RecordsType | EnumsType;
 
-export function parse<T>(schema: Schema): ParsedSchema<T>;
+export function parse<T>(schema: AvroSchema): ParsedSchema<T>;
 
-export class Buffer {
-    concat(args: any[]): Buffer;
-};
+module 'buffer' {
+    export class Buffer {
+        concat(args: any[]): Buffer;
+    };
+}
 
 export default {
     parse
