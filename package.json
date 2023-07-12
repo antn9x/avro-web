@@ -1,0 +1,10 @@
+{
+    "name": "avro-web",
+    "version": "1.0.1",
+    "main": "avro.js",
+    "types": "./index.d.ts",
+    "exports": {
+        "import": "./index.mjs",
+        "require": "./avro.js"
+    }
+}
