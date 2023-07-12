@@ -8009,6 +8009,7 @@ Tap.prototype.writeBinary = function (s, len) {
 
 
 module.exports = {
+  Buffer,
   parse: parse,
   types: schemas.types,
   Validator: deprecated.Validator,

@@ -29,6 +29,10 @@ type Schema = PrimitiveType | RecordsType | EnumsType
 
 export function parse<T>(schema: Schema): ParsedSchema<T>;
 
+export class Buffer {
+    concat(args: any[]): Buffer;
+};
+
 export default {
     parse
 };
